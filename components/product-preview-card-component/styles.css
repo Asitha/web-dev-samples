@@ -51,7 +51,16 @@ body {
     }
 }
 
+@media screen and (max-height: 560px) {
+    body {
+        height: auto;
+        width: 100%;
+        margin: 10px;
+    }
+}
+
 @media screen and (min-width: 376px) {
+
     .wrapper {
         width: 700px;
         display: flex;
@@ -153,3 +162,13 @@ button {
 button:hover {
     background-color: hsl(158, 36%, 30%);;
 }
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
