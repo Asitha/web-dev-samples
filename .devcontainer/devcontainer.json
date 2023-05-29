@@ -22,7 +22,8 @@
 				"github.copilot",
 				"github.copilot-labs",
 				"github.vscode-pull-request-github",
-				"bradlc.vscode-tailwindcss"
+				"bradlc.vscode-tailwindcss",
+				"ritwickdey.liveserver"
 			],
 			"settings": {
 				"editor.defaultFormatter": "esbenp.prettier-vscode",
