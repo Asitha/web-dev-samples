@@ -12,42 +12,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/styles.css">
   <title>Frontend Mentor | Results summary component</title>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <script src="index.js"></script>
 </head>
 
 <body>
   <main>
-    <article class="application">
+    <article>
+
       <div class="result">
-        <h3>Your Result</h2>
-          <div class="result__score">
-            <span class="visually-hidden">Your Score is:</span>
-            <h1>76</h1>
-            <p>of 100</p>
-          </div>
-          <div class="result__text">
-            <h2>Great</h2>
-            <p>You scored higher than 65% of the people who have taken this test</p>
-          </div>
+        <h1 class="section-heading">Your Result</h1>
+        <p class="circle">
+          <span class="visually-hidden">Your Score is:</span><span class="circle__score">76</span>of 100
+        </p>
+        <div class="result-description">
+          <h3 class="result-description__heading">Great</h3>
+          <p>You scored higher than 65% of the people who have taken this test</p>
+        </div>
       </div>
+
       <div class="summary">
-        <h3>Summary</h3>
-        <ul class="summary__item-list">
-          <li class="summary__item summary__item--type-reaction">
-            <img src="./assets/images/icon-reaction.svg" alt="reaction icon" />
-            <h4>Reaction</h4>
-            <p><span class="summary__item--score">80</span> / 100</p>
+        <h2 class="section-heading">Summary</h2>
+        <ul class="summary-list">
+          <li class="summary-item summary-item--reaction">
+            <div class="summary-item__title">
+              <img src="./assets/images/icon-reaction.svg" alt="reaction icon" />
+              <p>Reaction</p>
+            </div>
+            <p><span class="summary-item__score">80</span> / 100</p>
           </li>
         </ul>
         <button>Continue</button>
       </div>
+
     </article>
   </main>
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Asitha Nanayakkara</a>.
-  </div>
+  </footer>
 </body>
 
 </html>

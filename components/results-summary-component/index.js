@@ -8,17 +8,18 @@ fetch('./data.json').then(function(response) {
 );
 
 function processResults(data) {
-    element = document.getElementsByClassName('summary__item-list')[0];
+    element = document.getElementsByClassName('summary-list')[0];
     if (element) {
         element.innerHTML = '';
         data.forEach(function(item) {
-            console.log(item);
             element.innerHTML +=
-            '<li class="summary__item summary__item--type-' + item.category.toLowerCase() + '" >'
-                + '<img src="' + item.icon + '" alt="' + item.category + '"/>'
-                + '<h4>'+ item.category + '</h4>'
-                + '<p><span class="summary__item--score">'+item.score +'</span> / 100</p>'
-            '</li>';
+            '<li class="summary-item summary-item--type-' + item.category.toLowerCase() + '" >'
+                + '<div class="summary-item__title">'
+                    + '<img src="' + item.icon + '" alt="' + item.category + '"/>'
+                    + '<p>'+ item.category + '</p>'
+                + '</div>'
+                + '<p><span class="summary-item__score">'+ item.score +'</span> / 100</p>'
+            + '</li>';
         });
     }
 }
